@@ -1,0 +1,26 @@
+name = "hoa-tracker"
+main = "src/worker.ts"
+compatibility_date = "2024-01-01"
+account_id = "eeae65035016781e209594f665eda077"
+
+[site]
+bucket = "./frontend/dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "hoa-tracker"
+database_id = "1bc807e2-0d29-465a-bdd7-1444b5e7bf37"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "3f4236a813b74238a1b2ba97c94a468a"
+
+[[r2_buckets]]
+binding = "ATTACHMENTS"
+bucket_name = "hoa-tracker-attachments"
+
+[triggers]
+crons = ["0 8 * * 5", "0 6 * * *"]   # Friday 8am digest; daily 6am overdue check
+
+[vars]
+GOOGLE_CLIENT_ID = "219875231507-psq610h1lnic1jlgohvkiuiabug3rpo7.apps.googleusercontent.com"

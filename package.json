@@ -1,0 +1,24 @@
+{
+  "name": "hoa-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "build": "cd frontend && npm run build",
+    "schema": "wrangler d1 execute hoa-tracker --file=schema.sql",
+    "import-csv": "npx ts-node scripts/import-csv.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.14.0",
+    "papaparse": "^5.4.1",
+    "@types/papaparse": "^5.3.14"
+  },
+  "dependencies": {
+    "hono": "^4.4.0"
+  }
+}

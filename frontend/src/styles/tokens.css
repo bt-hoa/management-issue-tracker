@@ -1,0 +1,43 @@
+:root {
+  --color-sidebar-bg:      #1a1d23;
+  --color-sidebar-text:    #9ca3af;
+  --color-sidebar-active:  #ffffff;
+  --color-sidebar-hover:   #2d3139;
+  --color-content-bg:      #f9fafb;
+  --color-content-surface: #ffffff;
+  --color-border:          #e5e7eb;
+
+  --color-overdue:         #ef4444;
+  --color-overdue-bg:      #fef2f2;
+  --color-awaiting:        #f59e0b;
+  --color-awaiting-bg:     #fffbeb;
+  --color-inprogress:      #3b82f6;
+  --color-inprogress-bg:   #eff6ff;
+  --color-complete:        #10b981;
+  --color-complete-bg:     #ecfdf5;
+  --color-blocked:         #8b5cf6;
+  --color-blocked-bg:      #f5f3ff;
+  --color-not-started:     #6b7280;
+  --color-not-started-bg:  #f3f4f6;
+
+  --color-urgent:          #dc2626;
+  --color-high:            #ea580c;
+  --color-normal:          #6b7280;
+  --color-low:             #d1d5db;
+
+  --font-ui:               'DM Sans', system-ui, sans-serif;
+  --font-mono:             'JetBrains Mono', 'Fira Code', monospace;
+  --font-size-xs:          0.6875rem;
+  --font-size-sm:          0.75rem;
+  --font-size-base:        0.875rem;
+  --font-size-lg:          1rem;
+  --font-size-xl:          1.25rem;
+
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.12);
+
+  --sidebar-width: 180px;
+}
