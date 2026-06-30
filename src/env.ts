@@ -1,4 +1,5 @@
 export interface Env {
+  ASSETS: Fetcher;
   DB: D1Database;
   SESSIONS: KVNamespace;
   ATTACHMENTS: R2Bucket;

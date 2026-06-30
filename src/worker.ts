@@ -27,6 +27,9 @@ app.use('/api/*', async (c, next) => {
 
 app.get('/api/me', (c) => c.json(c.get('user')));
 
+// Serve frontend assets for all non-API routes
+app.get('*', (c) => c.env.ASSETS.fetch(c.req.raw));
+
 app.route('/api/tasks',     tasksRouter);
 app.route('/api/tags',      tagsRouter);
 app.route('/api/users',     usersRouter);
